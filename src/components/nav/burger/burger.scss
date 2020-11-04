@@ -1,0 +1,116 @@
+@import '../../variables.scss';
+// STYLE
+// BURGER ICON
+.Burger {
+    display: none;
+    .burger__icon {
+        margin-left: 20px;
+        height: 24px;
+        width: 18px;
+        cursor: pointer;
+        position: relative;
+        >span {
+            z-index: 1;
+            height: 2px;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 50%; transform: translateY(-50%);
+            background-color: $grey;
+            transition: all ease-in-out .3s;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $grey;
+            }
+            &::before {
+                transform: translateY(-5px);
+                transition: all ease-in-out .3s;
+            }
+            &::after {
+                transform: translateY(5px);
+                transition: all ease-in-out .3s;
+            }
+        }
+    }
+    .burger__icon.active{
+        >span {
+            background-color: rgba(0, 0, 0, 0);
+            &::before {
+                transform: translateY(0px) rotateZ(45deg);
+            }
+            &::after {
+                transform: translateY(0px) rotateZ(-45deg);
+            }
+        }
+    }
+}
+
+// ANIMATION
+.burger__anim {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 0;right: 650px;
+    .burger__anim.nav {
+        position: absolute;
+        opacity: 0;
+        background: $background;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
+        .burger__anim__nav_items {
+            padding: 0;
+            text-align: center;
+            >li {
+                margin: 50px 0 40px;
+                >a {
+                    font-weight: 900;
+                    font-size: 30px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    .burger__anim.nav.open {
+        opacity: 0;
+        top: 50px;
+        animation: fade-in .5s forwards;
+    }
+    .burger__anim.nav.close {
+        opacity: 1;
+        top: 0px;
+        animation: fade-out .5s forwards;
+    }
+}
+.burger__anim.open {
+    right: 0;
+}
+.burger__anim.close {
+    right: 0;
+    animation: display-close forwards;
+    animation-delay: .5s;
+}
+// KEYFRAMES
+@keyframes display-close {
+    100% {right: 650px;}
+}
+@keyframes fade-in {
+    100% {opacity: 1;top: 0px;}
+}
+@keyframes fade-out {
+    100% {opacity: 0;}
+}
+
+// RESPONSIVE
+@media screen and (max-width: 650px) {
+    .Burger {
+        display: block;
+    }
+}

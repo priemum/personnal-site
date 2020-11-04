@@ -1,0 +1,37 @@
+@import '../variables.scss';
+@import './node_modules/sal.js/src/sal.scss';
+
+// STYLE
+.navigation__inner {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  .navigation__bar {
+    display: flex;
+    .navigation__bar__element {
+      margin: 0 30px;
+      >a {
+        font-weight: 900;
+        color: $grey;
+        transition: color ease-in-out .1s;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 650px) {
+    .navigation__inner {
+        justify-content: flex-start;
+        .navigation__bar__element {
+                display: none;
+            }
+        }
+}

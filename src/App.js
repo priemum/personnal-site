@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
+import Nav from './components/nav/nav';
+import Header from './components/header/header';
+import Work from './components/work/work';
+
+import './App.scss';
 
 function App() {
+  useEffect(sal, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Nav/>
+        <Header/>
+        <Work/>
     </div>
   );
 }

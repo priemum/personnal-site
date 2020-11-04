@@ -1,0 +1,21 @@
+import React from 'react';
+import Burger from './burger/burger';
+import './nav.scss'
+
+function Nav() {
+  const tab = [{name: 'Work', link: 'work'}, {name: 'About', link: 'about'}, {name: 'Contact', link: 'contact'}, {name: 'Resume', link: 'resume'}]
+  return (
+    <nav className="navigation__inner">
+        <ul className="navigation__bar"
+        data-sal-duration="500"
+        data-sal="slide-down"
+        data-sal-delay="1000"
+        data-sal-easing="ease-out-bounce">
+            {tab.map((item, index) => <li className="navigation__bar__element" key={index}><a href={`#` + item.link}>{item.name}</a></li>)}
+        </ul>
+        {Burger(tab)}
+    </nav>
+  );
+}
+
+export default Nav;
