@@ -1,13 +1,16 @@
 import React from 'react';
+
+// STYLE
 import './work.scss'
 
+// IMAGES
 import img from '../../assets/images/exe.jpg'
 
 function Work() {
   const images = [{image: img, link: 'test'}, {image: img, link: 'test'}];
   return (
     <div className="work">
-      <div className="work__inner">
+      <div id="work" className="work__inner">
         <h1 className="work__title"
           data-sal-duration="500" data-sal="zoom-in" data-sal-delay="300"
           data-sal-easing="ease-out-bounce">

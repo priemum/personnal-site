@@ -1,10 +1,12 @@
 import React from 'react';
+
+// STYLE
 import './about.scss'
 
 function About() {
   return (
     <div className="about">
-      <div className="about__inner">
+      <div id="about" className="about__inner">
         <h1 className="about__title"
           data-sal-duration="500" data-sal="zoom-in" data-sal-delay="300"
           data-sal-easing="ease-out-bounce">

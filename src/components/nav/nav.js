@@ -1,9 +1,13 @@
 import React from 'react';
-import Burger from './burger/burger';
+
+// STYLE
 import './nav.scss'
 
+// COMPONENT
+import Burger from './burger/burger';
+
 function Nav() {
-  const tab = [{name: 'Work', link: 'work'}, {name: 'About', link: 'about'}, {name: 'Contact', link: 'contact'}, {name: 'Resume', link: 'resume'}]
+  const tab = [{name: 'Home', link: 'home'}, {name: 'Work', link: 'work'}, {name: 'About', link: 'about'}, {name: 'Contact', link: 'contact'}]
   return (
     <nav className="navigation__inner">
         <ul className="navigation__bar"

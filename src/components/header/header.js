@@ -1,8 +1,11 @@
 import React from 'react';
+
+// STYLE
 import './header.scss'
 
-import Photoshop from '../../assets/icones/Adobe_Photoshop.svg'
+// ICONES
 import Illustrator from '../../assets/icones/Adobe_Illustrator.svg'
+import Photoshop from '../../assets/icones/Adobe_Photoshop.svg'
 import XD from '../../assets/icones/Adobe_XD.svg'
 import ReactJs from '../../assets/icones/React.svg'
 import Vue from '../../assets/icones/Vue.svg'
@@ -12,7 +15,7 @@ function Header() {
   const tab = [Photoshop, Illustrator, XD, ReactJs, Vue, Js];
   const word = 'Lorem ipsum dolor';
   return (
-    <header className="header">
+    <header className="header" id="home">
         <div className="header__inner">
             <h1 className="header__title">
                 {word.split("").map((letter, index) => <span key={index} style={{'color': 'white'}}
@@ -27,11 +30,11 @@ function Header() {
                 data-sal-delay="800" data-sal-easing="ease-out-bounce">
                 {tab.map(item => <img key={item} className="icone" src={item} alt="icone"/>)} 
             </div>
-            <div data-sal-duration="500" data-sal="slide-down" data-sal-delay="800"
+            <div className="header__contact" data-sal-duration="500" data-sal="slide-down" data-sal-delay="800"
                 data-sal-easing="ease-out-bounce">
-                <button className="header__button">
-                    Build app together
-                </button>
+                <a href="mailto:pro@evansende.com" className="header__contact__button">
+                    Download my resume
+                </a>
             </div>
             
         </div>
