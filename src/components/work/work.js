@@ -13,15 +13,15 @@ function Work() {
           data-sal-easing="ease-out-bounce">
           Work
         </h1>
-        <div className="work__projects grid">
-          {images.map((arg, index) => 
-          <a key={index} href={arg.link} data-sal-duration="800" data-sal="slide-down" data-sal-delay={(index + 1) * 200}
+        <div className="work__projects grid" data-sal-duration="500" data-sal="fade" data-sal-delay="600"
               data-sal-easing="ease-out-bounce">
-                <img src={arg.image} alt={arg.link}/>
-                <div className="work__project__text">
-                  Title
-                  <span className="subtitle">Subtitle</span>
-                </div>
+          {images.map((arg, index) => 
+          <a key={index} href={arg.link}>
+            <img src={arg.image} alt={arg.link}/>
+            <div className="work__project__text">
+              Title
+              <span className="subtitle">Subtitle</span>
+            </div>
           </a>
           )}
         </div>

@@ -1,0 +1,30 @@
+@import '../variables.scss';
+// STYLE
+.footer {
+    background: rgb(20, 20, 20);
+    padding: 20px 0;
+    color: $grey;
+    font-size: 20px;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, .1);
+    text-align: center;
+    .footer__inner {
+        .footer__inner__soocial_red {
+            color: white;
+            cursor: pointer;
+            transition: color ease-in-out .1s;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+// RESPONSIVE
+@media screen and (max-width: 650px) {
+    .footer {
+        font-size: 15px;
+        .footer__inner {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

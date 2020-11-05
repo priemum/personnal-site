@@ -12,7 +12,8 @@
   width: 100%;
   .navigation__bar {
     display: flex;
-    .navigation__bar__element {
+    text-shadow: 0 3px 5px rgba(0,0,0,.2);
+  .navigation__bar__element {
       margin: 0 30px;
       >a {
         font-weight: 900;
