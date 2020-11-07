@@ -3,9 +3,9 @@ import React from 'react';
 // STYLE
 import './footer.scss'
 
-function Footer() {
+function Footer(props) {
   return (
-    <div className="footer">
+    <div className={props.class? 'footer ' + props.class: 'footer'}>
         <div className="footer__inner">
             Evan Sende © 2020 All rights reserved
             <div className="footer__inner__soocial">

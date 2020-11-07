@@ -18,7 +18,20 @@
         }
     }
 }
+.footer.project {
+    opacity: .001;
+    .footer__inner {
+        .footer__inner__soocial_red {
+            display: none;
+        }
+    }
+}
 // RESPONSIVE
+// @media screen and (max-width: 1000px) {
+//     .footer.project {
+//         margin-top:388px;
+//     }
+// }
 @media screen and (max-width: 650px) {
     .footer {
         font-size: 15px;

@@ -4,7 +4,6 @@ import React from 'react';
 import './project_assets.scss'
 
 function Assets(props) {
-  const back = '<back/>';
   return (
     <div className="Assets">
         <div className="assets__inner" data-sal-duration="500"
@@ -22,7 +21,12 @@ function Assets(props) {
                     {props.technologies.txt}
                 </div></section>:
             props.select === 'Wireframe'? <section className="wireframe">
-                <img src={props.wireframe} alt='icone'/></section> :
+                <img src={props.wireframe.img} className="wireframe__image" alt='wireframe illustration'/>
+                <div className="wireframe__link" >
+                    {// eslint-disable-next-line
+                    props.wireframe.links.map((arg, i) => <a target='_blank' without rel="noreferrer" without="true" key={i} href={arg.link}>{arg.txt}</a>)}
+                </div>
+                </section> :
             props.select === 'Result'? <section className="result">
             <div className=" txt">
                     {props.result.txt}{props.result.link}
@@ -32,10 +36,10 @@ function Assets(props) {
                     {props.conclusion}
                 </div></section> : ''}
         </div>
-        <div className="back" data-sal-duration="500" data-sal="slide-up"
-        data-sal-delay="1000" data-sal-easing="ease-out-bounce">
-            <a href='/'>{back}</a>
-        </div>
+        <div className="project_header__link" data-sal-duration="500" data-sal="slide-up"
+              data-sal-delay="1000" data-sal-easing="ease-out-bounce">
+              <a href='/'>Back</a>
+          </div>
     </div>
   );
 }

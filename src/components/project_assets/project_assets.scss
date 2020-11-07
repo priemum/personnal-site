@@ -33,8 +33,22 @@
     }
     .wireframe {
         animation: overviewFadeIn 0.5s forwards;
-        img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .wireframe__image {
             width: 600px;
+        }
+        .wireframe__link {
+            display: flex;
+            a {
+                color: $grey;
+                margin: 20px 20px;
+                transition: color ease-in-out .2s;
+                &:hover {
+                    color: white;
+                }
+            }
         }
     }
     .result {
@@ -43,15 +57,18 @@
     .conclusion {
         animation: conclusionFadeIn 0.5s forwards;
     }
-    .back {
+    .project_header__link {
+        width: 100%;
         position: absolute;
+        text-align: center;
         bottom: 0;
-        margin-bottom: 40px;
+        margin-bottom: 40px; 
         a {
             color: $grey;
+            font-weight: 900;
             cursor: pointer;
             font-size: 15px;
-            transition: color ease-in-out .1s;
+            transition: color ease-in-out .2s;
             &:hover {
                 color: white;
             }
@@ -74,6 +91,9 @@
 @keyframes conclusionFadeIn {
     100% {opacity: 1;margin: 0;}
 }
+.test {
+    display: none;
+}
 // RESPONSIVE
 @media screen and (max-width: 1000px) {
     .Assets {
@@ -84,7 +104,7 @@
         .wireframe {
             display: flex;
             justify-content: center;
-            img {
+            .wireframe__image {
                 width: 60%;
             }
         }
@@ -108,8 +128,17 @@
             }
         }
         .wireframe {
-            img {
+            .wireframe__image {
                 width: 80%;
+            }
+            .wireframe__link {
+                flex-direction: column;
+                margin-top: 10px;
+                a {
+                    font-size: 12px;
+                    text-align: center;
+                    margin: 0;
+                }
             }
         }
     }

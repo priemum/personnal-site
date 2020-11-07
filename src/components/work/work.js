@@ -4,10 +4,10 @@ import React from 'react';
 import './work.scss'
 
 // IMAGES
-import img from '../../assets/images/exe.jpg'
+import thomas from '../../assets/images/thomas_work.png'
 
 function Work() {
-  const images = [{image: img, link: '/thomas'}, {image: img, link: 'test'}];
+  const images = [{image: thomas, link: '/thomas'}, {image: thomas, link: 'test'}];
   return (
     <div className="work">
       <div id="work" className="work__inner">
