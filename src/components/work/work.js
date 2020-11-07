@@ -7,7 +7,7 @@ import './work.scss'
 import img from '../../assets/images/exe.jpg'
 
 function Work() {
-  const images = [{image: img, link: 'test'}, {image: img, link: 'test'}];
+  const images = [{image: img, link: '/thomas'}, {image: img, link: 'test'}];
   return (
     <div className="work">
       <div id="work" className="work__inner">
@@ -16,7 +16,7 @@ function Work() {
           data-sal-easing="ease-out-bounce">
           Work
         </h1>
-        <div className="work__projects grid" data-sal-duration="500" data-sal="fade" data-sal-delay="600"
+        <div className="work__projects grid" data-sal-duration="400" data-sal="fade" data-sal-delay="600"
               data-sal-easing="ease-out-bounce">
           {images.map((arg, index) => 
           <a key={index} href={arg.link}>

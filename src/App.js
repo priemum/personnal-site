@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 // COMPONENTS
 import Home from './components/home';
+import Thomas from './components/thomas';
 
 // ANIMATIONS
 import sal from "sal.js";
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" exact component={Home}/>
+        <Route path="/thomas" exact component={Thomas}/>
       </Router>
     </div>
   );

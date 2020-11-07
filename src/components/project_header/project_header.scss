@@ -1,0 +1,65 @@
+@import '../variables.scss';
+// STYLE
+.project_header {
+    background: $background;
+    padding: 50px 0;
+    color: $grey;
+    font-size: 20px;
+    .project_header__inner {
+        text-align: center;
+        margin-top: 50px;
+        .project_header__title {
+            font-size: 50px;
+            font-weight: 900;
+        }
+        .project_header__subtitle {
+            font-size: 20px;
+            font-weight: 500;
+            margin-right: 60px;
+            display: flex;
+            justify-content: center;
+            span {
+                margin-left: 50px;
+                color: $dark_grey;
+            }
+        }
+    }
+}
+// RESPONSIVE
+@media screen and (max-width: 1000px) {
+    .project_header {
+        .project_header__inner {
+            .project_header__title {
+                font-size: 40px;
+            }
+            .project_header__subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .project_header {
+        .project_header__inner {
+            .project_header__subtitle {
+                font-size: 15px;
+                flex-direction: column;
+                margin: 0;
+                span {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .project_header {
+        .project_header__inner {
+            .project_header__title {
+                font-size: 30px;
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+}

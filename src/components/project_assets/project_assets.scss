@@ -1,0 +1,116 @@
+@import '../variables.scss';
+// STYLE
+.Assets {
+    display: flex;
+    justify-content: center;
+    background: $background;
+    .overview, .technologies, .wireframe, .result, .conclusion {
+        color: $grey;
+        opacity: 0;
+        margin-top: 20px;
+        animation: technologiesFadeIn 0.5s forwards;
+    }
+    .txt {
+        width: 800px;
+    }
+    .technologies {
+        animation: wireframeFadeIn 0.5s forwards;
+        .technologies__icones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 50px;
+                margin: 0 20px;
+            }
+            span {
+                margin: 0 20px;
+            }
+        }
+        .technologies__desc {
+            margin-top: 20px;
+        }
+    }
+    .wireframe {
+        animation: overviewFadeIn 0.5s forwards;
+        img {
+            width: 600px;
+        }
+    }
+    .result {
+        animation: resultFadeIn 0.5s forwards;
+    }
+    .conclusion {
+        animation: conclusionFadeIn 0.5s forwards;
+    }
+    .back {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 40px;
+        a {
+            color: $grey;
+            cursor: pointer;
+            font-size: 15px;
+            transition: color ease-in-out .1s;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+// ANIMATIONS
+@keyframes overviewFadeIn {
+    100% {opacity: 1;margin: 0;}
+}
+@keyframes technologiesFadeIn {
+    100% {opacity: 1;margin: 0;}
+}
+@keyframes wireframeFadeIn {
+    100% {opacity: 1;margin: 0;}
+}
+@keyframes resultFadeIn {
+    100% {opacity: 1;margin: 0;}
+}
+@keyframes conclusionFadeIn {
+    100% {opacity: 1;margin: 0;}
+}
+// RESPONSIVE
+@media screen and (max-width: 1000px) {
+    .Assets {
+        .txt {
+            width: 80%;
+            margin: auto;
+        }
+        .wireframe {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 60%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .Assets {
+        .txt {
+            font-size: 12px;
+        }
+        .technologies {
+            .technologies__icones {
+                img {
+                    width: 30px;
+                    margin: 0 10px;
+                }
+                span {
+                    font-size: 15px;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .wireframe {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
