@@ -7,7 +7,10 @@ import './work.scss'
 import thomas from '../../assets/images/thomas_work.png'
 
 function Work() {
-  const images = [{image: thomas, link: '/thomas'}, {image: thomas, link: 'test'}];
+  const images = [
+    {image: thomas, link: '/thomas', title:'ThomasJauze Portfolio', sub: 'Professional Project'},
+    {image: thomas, link: '/hoffson', title:'Hoffson', sub: 'Personal Project'}
+  ];
   return (
     <div className="work">
       <div id="work" className="work__inner">
@@ -20,10 +23,10 @@ function Work() {
               data-sal-easing="ease-out-bounce">
           {images.map((arg, index) => 
           <a key={index} href={arg.link}>
-            <img src={arg.image} alt={arg.link}/>
+            <img className="work__project__img" src={arg.image} alt={arg.link}/>
             <div className="work__project__text">
-              Title
-              <span className="subtitle">Subtitle</span>
+              {arg.title}
+              <span className="subtitle">{arg.sub}</span>
             </div>
           </a>
           )}
