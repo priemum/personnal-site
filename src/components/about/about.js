@@ -14,7 +14,18 @@ function About() {
         </h1>
         <p className="about__desc" data-sal-duration="500" data-sal="fade" data-sal-delay="500"
           data-sal-easing="ease-out-bounce">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <span className="spaces">
+              I have always liked <span className="white">mathematics</span>, <span className="white">algorithms </span>
+              and with the development of apps I found <span className="white">my happiness</span>.
+            </span>
+            <span className="spaces">
+              Moreover, Photoshop, Illustrator, Xd... I use these softwares since <span className="white">more than 5 years</span>.
+              These allowed me to develop <span className="white">a sensitivity</span> for <span className="white">UI</span> and <span className="white">UX</span>.
+              Now I build platforms with famous libraries <span className="white">like React</span>.
+            </span>
+            <span className="spaces">
+              If you want to know more about me, you have <span className="white">my email</span> and <span className="white">my number</span> below. <span className="sun">Hopefully soon !</span>
+            </span>
         </p>
       </div>
     </div>

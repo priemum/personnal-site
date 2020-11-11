@@ -53,7 +53,7 @@ function Thomas() {
         <ProjectHeader
         title={title}
         date='Oct. 2020'
-        role='Developer Ui'
+        role='Developer UI'
         type='Personal Project'
         />
         {Select(list, select, setSelect)}
