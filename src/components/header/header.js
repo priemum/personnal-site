@@ -7,13 +7,16 @@ import './header.scss'
 import Illustrator from '../../assets/icones/Adobe_Illustrator.svg'
 import Photoshop from '../../assets/icones/Adobe_Photoshop.svg'
 import XD from '../../assets/icones/Adobe_XD.svg'
-import ReactJs from '../../assets/icones/React.svg'
+import ReactJs from '../../assets/icones/logo512.png'
 import Vue from '../../assets/icones/Vue.svg'
 import Js from '../../assets/icones/js.svg'
 
+// IMAGE
+import CV from '../../assets/images/CV.pdf'
+
 function Header() {
   const tab = [Photoshop, Illustrator, XD, ReactJs, Vue, Js];
-  const word = 'Lorem ipsum dolor';
+  const word = "Hey, I'm Evan !";
   return (
     <header className="header" id="home">
         <div className="header__inner">
@@ -24,7 +27,7 @@ function Header() {
             </h1>
             <h2 className="header__subtitle" data-sal-duration="500" data-sal="slide-up"
                 data-sal-delay="600" data-sal-easing="ease-out-bounce">
-                Aliquid, ad doloremque numquam veniam nisi iusto culpa est voluptatem
+                I design and build apps using tools like these:
             </h2>
             <div className="header__icones" data-sal-duration="500" data-sal="slide-up"
                 data-sal-delay="800" data-sal-easing="ease-out-bounce">
@@ -32,11 +35,10 @@ function Header() {
             </div>
             <div className="header__contact" data-sal-duration="500" data-sal="slide-down" data-sal-delay="800"
                 data-sal-easing="ease-out-bounce">
-                <a href="mailto:pro@evansende.com" className="header__contact__button">
-                    Download my resume
+                <a href={CV} className="header__contact__button" target="_blank" rel="noopener noreferrer" download="CV">
+                    Download Resume
                 </a>
             </div>
-            
         </div>
     </header>
   );

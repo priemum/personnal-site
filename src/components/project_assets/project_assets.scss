@@ -56,6 +56,18 @@
     }
     .conclusion {
         animation: conclusionFadeIn 0.5s forwards;
+        .links {
+            text-align: center;
+            margin-top: 50px;
+            >a {
+                color: $grey;
+                margin: 0 20px;
+                transition: color ease-in-out .2s;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
     .project_header__link {
         width: 100%;
@@ -138,6 +150,18 @@
                     font-size: 12px;
                     text-align: center;
                     margin: 0;
+                }
+            }
+        }
+        .conclusion {
+            animation: conclusionFadeIn 0.5s forwards;
+            .links {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                >a {
+                    margin: 0;
+                    margin-top: 5px;
                 }
             }
         }

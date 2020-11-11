@@ -8,14 +8,14 @@ function Assets(props) {
     <div className="Assets">
         <div className="assets__inner" data-sal-duration="500"
         data-sal="zoom-out" data-sal-delay="700" data-sal-easing="ease-out-bounce">
-            {props.select === 'Overview'? <section className="overview">
+            {props.select === 'Context'? <section className="overview">
             <div className=" txt">
-                    {props.technologies.txt}
+                    {props.context}
             </div></section>:
             props.select === 'Technologies'? <section className="technologies">
                 <div className="technologies__icones">
                     {props.technologies.icones.map((icone, index) => <img src={icone} key={index} alt='icone'/>)}
-                    <span>i18n</span>
+                    {props.i18n? <span>i18n</span> : ''}
                 </div>
                 <div className="technologies__desc txt">
                     {props.technologies.txt}
@@ -34,6 +34,10 @@ function Assets(props) {
             props.select === 'Conclusion'? <section className="conclusion">
                 <div className=" txt">
                     {props.conclusion}
+                </div>
+                <div className="links txt">
+                    <a href="https://github.com/ednese" target="_blank" rel="noreferrer">github</a>
+                    {props.result.map((arg, i) => <a href={arg.link} target="_blank" rel="noreferrer" key={i} >{arg.txt}</a>)}
                 </div></section> : ''}
         </div>
         <div className="project_header__link" data-sal-duration="500" data-sal="slide-up"

@@ -5,11 +5,12 @@ import './work.scss'
 
 // IMAGES
 import thomas from '../../assets/images/thomas_work.png'
+import hoffson from '../../assets/images/hoffson_work.png'
 
 function Work() {
   const images = [
-    {image: thomas, link: '/thomas', title:'ThomasJauze Portfolio', sub: 'Professional Project'},
-    {image: thomas, link: '/hoffson', title:'Hoffson', sub: 'Personal Project'}
+    {image: thomas, link: '/evansende.com/#/thomas', title:'ThomasJauze Portfolio', sub: 'Professional Project'},
+    {image: hoffson, link: '/evansende.com/#/hoffson', title:'Hoffson', sub: 'Personal Project'}
   ];
   return (
     <div className="work">
@@ -17,7 +18,7 @@ function Work() {
         <h1 className="work__title"
           data-sal-duration="500" data-sal="zoom-in" data-sal-delay="300"
           data-sal-easing="ease-out-bounce">
-          Work
+          Recent Work
         </h1>
         <div className="work__projects grid" data-sal-duration="400" data-sal="fade" data-sal-delay="600"
               data-sal-easing="ease-out-bounce">
