@@ -82,8 +82,15 @@
             .work__projects {
                 grid-template-columns: repeat(1,1fr);
                 a {
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
                     .work__project__img {
                         filter: blur(0px);
+                        opacity: .3;
+                        &:hover {
+                            opacity: .5;
+                        }
                     }
                 }
             }
@@ -108,7 +115,7 @@
                     }
                     .work__project__text {
                         font-size: 15px;
-                        margin: 15px;
+                        margin: 0px;
                         >.subtitle {
                             font-size: 12px;
                         }
@@ -128,7 +135,6 @@
                     }
                     .work__project__text {
                         font-size: 12px;
-                        margin: 10px;
                         >.subtitle {
                             font-size: 10px;
                         }

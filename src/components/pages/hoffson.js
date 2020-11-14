@@ -9,10 +9,10 @@ import Assets from '../project_assets/project_assets';
 import Footer from '../footer/footer';
 
 // ICONES
-import Js from '../..//assets/icones/js.svg'
+import Illustrator from '../../assets/icones/Adobe_Illustrator.svg'
+import XD from '../../assets/icones/Adobe_XD.svg'
 import ReactIcon from '../../assets/icones/logo512.png'
 import Redux from '../../assets/icones/Redux.svg'
-import Html from '../../assets/icones/HTML.svg'
 import Css from '../../assets/icones/CSS.svg'
 
 // IMAGE
@@ -38,7 +38,7 @@ function Hoffson() {
   const [select, setSelect] = useState(list[0]);
 
   const title = {name:'Hoffson', surname:' e-commerce ', type:'site'};
-  const technologies = {txt: 'To develop this site, I used ReactJs with hooks then I implemented Redux in the project in addition to the hooks to facilitate accessibility to state variables. For the style and animations I used css. Regarding the graphics part, I use adobe Xd to do the model as well as illustrator.', icones: [ReactIcon, Redux, Js, Css, Html]}
+  const technologies = {txt: 'To develop this site, I used ReactJs with hooks then I implemented Redux in the project in addition to the hooks to facilitate accessibility to state variables. For the style and animations I used css. Regarding the graphics part, I use adobe Xd to do the model as well as illustrator.', icones: [Illustrator, XD, ReactIcon, Redux, Css]}
   const conclusion = 'The site is still in development, I add features when I want and it allows me to improve myself on this kind of app. You can find it below as for me I invite you to visit my github if you want to see more!';
   const wireframe = {img: hoffson, links:[{link: web_1, txt: 'page 1'},{link: web_2, txt: 'page 2'},{link: web_3, txt: 'page 3'}]}
   const Context = 'When I wanted to buy a product on amazon this summer, I wondered how code such sites. It was only natural that I started to develop hoffson in order to learn how to develop an e-commerce site. The site is fictitious and still under construction. I allow myself to modify it when I feel like it and I take care in a 1st time exclusively of the front end.'

@@ -5,7 +5,7 @@ import './contact.scss'
 
 function Contact() {
   return (
-    <div className="contact">
+    <section className="contact">
         <div id="contact" className="contact__inner" data-sal-duration="500" data-sal="slide-up"
                 data-sal-delay="200" data-sal-easing="ease-out-bounce">
             contact me:
@@ -13,7 +13,7 @@ function Contact() {
             or
             <a className="contact_red" href="mailto:pro@evansende.com"> pro@evansende.com ↓</a>
         </div>
-    </div>
+    </section>
   );
 }
 export default Contact;

@@ -5,7 +5,7 @@ import './project_assets.scss'
 
 function Assets(props) {
   return (
-    <div className="Assets">
+    <section className="Assets">
         <div className="assets__inner" data-sal-duration="500"
         data-sal="zoom-out" data-sal-delay="700" data-sal-easing="ease-out-bounce">
             {props.select === 'Context'? <section className="overview">
@@ -40,11 +40,11 @@ function Assets(props) {
                     {props.result.map((arg, i) => <a href={arg.link} target="_blank" rel="noreferrer" key={i} >{arg.txt}</a>)}
                 </div></section> : ''}
         </div>
-        <div className="project_header__link" data-sal-duration="500" data-sal="slide-up"
+        <div className="project_assets__link" data-sal-duration="500" data-sal="slide-up"
               data-sal-delay="1000" data-sal-easing="ease-out-bounce">
               <a href='/'>Back</a>
           </div>
-    </div>
+    </section>
   );
 }
 

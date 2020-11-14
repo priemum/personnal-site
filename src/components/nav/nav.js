@@ -15,7 +15,7 @@ function Nav() {
         data-sal="slide-down"
         data-sal-delay="1000"
         data-sal-easing="ease-out-bounce">
-            {tab.map((item, index) => <li className="navigation__bar__element" key={index}><a href={`#` + item.link}>{item.name}</a></li>)}
+            {tab.map((item, index) => <li className="navigation__bar__element" key={index}><a href={`/#` + item.link}>{item.name}</a></li>)}
         </ul>
         {Burger(tab)}
     </nav>

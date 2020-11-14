@@ -5,7 +5,7 @@ import './footer.scss'
 
 function Footer(props) {
   return (
-    <div className={props.class? 'footer ' + props.class: 'footer'}>
+    <footer className={props.class? 'footer ' + props.class: 'footer'}>
         <div className="footer__inner">
             Evan Sende © 2020 All rights reserved
             <div className="footer__inner__soocial">
@@ -13,7 +13,7 @@ function Footer(props) {
                 <a href="https://github.com/ednese" target="_blank" rel="noreferrer" className="footer__inner__soocial_red"> Github</a>
             </div>
         </div>
-    </div>
+    </footer>
   );
 }
 export default Footer;

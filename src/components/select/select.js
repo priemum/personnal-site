@@ -5,7 +5,7 @@ import './select.scss'
 
 function Select(list, select, setSelect) {
   return (
-    <div className="select">
+    <section className="select">
         <div className="select__inner">
             <ul role="tablist" className="select__list"
             data-sal-duration="500" data-sal="zoom-out" data-sal-delay="600"
@@ -14,7 +14,7 @@ function Select(list, select, setSelect) {
                 role="tab" onClick={() => setSelect(arg)} key={index}>{arg}</li>)}
             </ul>
         </div>
-    </div>
+    </section>
   );
 }
 export default Select;

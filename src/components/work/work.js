@@ -9,11 +9,11 @@ import hoffson from '../../assets/images/hoffson_work.png'
 
 function Work() {
   const images = [
-    {image: thomas, link: '/evansende.com/#/thomas', title:'ThomasJauze Portfolio', sub: 'Professional Project'},
-    {image: hoffson, link: '/evansende.com/#/hoffson', title:'Hoffson', sub: 'Personal Project'}
+    {image: thomas, link: '/thomas', title:'ThomasJauze Portfolio', sub: 'Professional Project'},
+    {image: hoffson, link: '/hoffson', title:'Hoffson', sub: 'Personal Project'}
   ];
   return (
-    <div className="work">
+    <section className="work">
       <div id="work" className="work__inner">
         <h1 className="work__title"
           data-sal-duration="500" data-sal="zoom-in" data-sal-delay="300"
@@ -33,7 +33,7 @@ function Work() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

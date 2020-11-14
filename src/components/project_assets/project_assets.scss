@@ -69,7 +69,7 @@
             }
         }
     }
-    .project_header__link {
+    .project_assets__link {
         width: 100%;
         position: absolute;
         text-align: center;
@@ -124,6 +124,7 @@
 }
 @media screen and (max-width: 650px) {
     .Assets {
+        flex-direction: column;
         .txt {
             font-size: 12px;
         }
@@ -164,6 +165,10 @@
                     margin-top: 5px;
                 }
             }
+        }
+        .project_assets__link {
+            position: relative;
+            margin-top: 40px; 
         }
     }
 }

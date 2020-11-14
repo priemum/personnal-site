@@ -5,7 +5,7 @@ import './project_header.scss'
 
 function ProjectHeader(props) {
   return (
-    <div className="project_header">
+    <header className="project_header">
         <div className="project_header__inner">
           
             <div className="project_header__title"
@@ -13,7 +13,6 @@ function ProjectHeader(props) {
             data-sal="slide-up"
             data-sal-delay="200"
             data-sal-easing="ease-out-bounce">
-            {/* <div className="project_header__title"> */}
                 {props.title.name}
                 {props.title.surname}
                 {props.title.type}
@@ -28,7 +27,7 @@ function ProjectHeader(props) {
                 <div><span>Type: </span>{props.type}</div>
             </div>
         </div>
-    </div>
+    </header>
   );
 }
 export default ProjectHeader;

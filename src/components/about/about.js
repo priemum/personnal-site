@@ -5,7 +5,7 @@ import './about.scss'
 
 function About() {
   return (
-    <div className="about">
+    <section className="about">
       <div id="about" className="about__inner">
         <h1 className="about__title"
           data-sal-duration="500" data-sal="zoom-in" data-sal-delay="300"
@@ -28,7 +28,7 @@ function About() {
             </span>
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
