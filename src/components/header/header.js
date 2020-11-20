@@ -12,7 +12,7 @@ import Vue from '../../assets/icones/Vue.svg'
 import Js from '../../assets/icones/js.svg'
 
 // IMAGE
-import CV from '../../assets/images/CV.pdf'
+import CV from '../../assets/images/cv_2020.pdf'
 
 function Header() {
   const tab = [Photoshop, Illustrator, XD, ReactJs, Vue, Js];

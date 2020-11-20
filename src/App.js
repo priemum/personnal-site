@@ -8,6 +8,7 @@ import {Switch, Route, useLocation} from 'react-router-dom';
 
 // PAGES TRANSITIONS
 import {AnimatePresence} from 'framer-motion';
+
 // COMPONENTS
 import Home from './components/pages/home';
 import Thomas from './components/pages/thomas';
